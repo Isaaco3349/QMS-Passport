@@ -71,7 +71,7 @@ export default function OnboardPage() {
         <div className="card">
           <h3>Developer docs</h3>
           <p className="muted">
-            EVM-compatible — Solidity, Foundry, Hardhat. No blob txs; use confirmations, not
+            EVM-compatible: Solidity, Foundry, Hardhat. No blob txs. Use confirmations, not
             finalized.
           </p>
           <p>

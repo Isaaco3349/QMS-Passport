@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Nav />
             <WalletBar />
             <div className="banner">
-              Testnet only — no real funds. Tokens and LP reset around early December 2026.
+              Testnet only. No real funds. Tokens and LP reset around early December 2026.
             </div>
             {children}
           </div>

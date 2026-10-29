@@ -1,6 +1,6 @@
 # QMS Builder Program — Cohort I Application Draft
 
-Use this document as source material for https://qms.finance/builders-program (Oct 28 – Nov 18, 2026). Replace `[TEAM]` placeholders before submit.
+Use this document as source material for https://qms.finance/builders-program (Oct 28 – Nov 18, 2026).
 
 ---
 
@@ -14,7 +14,11 @@ Open-source **front door** to QMS Testnet: guided onboarding into QWAP, **PoUW-a
 
 ## Repository
 
-https://github.com/Isaaco3349/QMS-Passport (public from day 0)
+https://github.com/Isaaco3349/QMS-Passport
+
+## Live demo
+
+https://qms-passport.vercel.app
 
 ---
 
@@ -47,31 +51,41 @@ We are **not** claiming post-quantum wallet security on EOAs today; we align wit
 
 ## Technical execution (what exists today)
 
-**Already in repo:**
+**Shipped and verifiable:**
 
-- Monorepo with MIT license, architecture docs, integration map  
-- `@qms-passport/chain-config` — viem chain + ecosystem URLs  
+- Public monorepo (MIT): docs, architecture, integration map  
+- **Live web alpha:** https://qms-passport.vercel.app — wallet connect, onboarding, Activity (QMSScan), Migration Kit export, Badges  
+- `@qms-passport/chain-config` — viem chain `19480` + ecosystem URLs  
 - `@qms-passport/sdk` — QMSScan client, confirmation waiter, manifest schema, achievement inference  
-- Foundry `DeploymentRegistry` + tests scaffold  
-- Verified integration against live APIs (`/api/v2/stats`, address txs, QwapRouter decodes on QMSScan)
+- Foundry `DeploymentRegistry` with passing unit tests  
+- Integration validated against live QMSScan API and QWAP router decodes on testnet  
 
-**By Nov 18:**
+**Before / during cohort (Nov 18+):**
 
-- Deployed web alpha (`apps/web`) with wallet connect, onboarding, `/activity`, manifest export  
-- Public demo URL + 2-minute walkthrough video  
-- SDK published to npm (or GitHub packages) for cohort reuse  
+- npm publish for `@qms-passport/sdk` (or documented GitHub install path for cohort teams)  
+- Optional: deploy + verify `DeploymentRegistry` on testnet; 2-minute demo video  
+- PoUW structured API integration when QMS / QMSScan exposes fields ([docs/POUW_DATA.md](../docs/POUW_DATA.md))
 
 ---
 
 ## Team experience
 
-`[TEAM: bios — prior shipped products, GitHub, X, relevant EVM + developer tooling experience. Pseudonym OK with verifiable track record.]`
+**Primary builder — @Isaaco3349**
 
-**Roles:**
+- **GitHub:** https://github.com/Isaaco3349  
+- **Focus:** EVM application layer, wallet UX, developer tooling on early-stage L1 testnets  
+- **This project:** End-to-end delivery of QMS Passport — Next.js + wagmi/viem app, TypeScript SDK monorepo, Foundry contracts, Vercel production deploy, and QMS-specific docs (confirmations vs `finalized`, Blockscout integration, testnet reset manifests).  
+- **Why credible for Cohort I:** Working public repo + live demo, not a slide deck; designed as **ecosystem public good** (SDK + Migration Kit) rather than a closed mini-app.
 
-- `[Lead / product + smart contracts]`  
-- `[Frontend / wallet UX]`  
-- `[Infra / SDK]`  
+**Roles covered (lean team):**
+
+| Role | Owner | Evidence |
+|------|--------|----------|
+| Product + architecture | @Isaaco3349 | README, `docs/ARCHITECTURE.md`, cohort positioning |
+| Frontend / wallet UX | @Isaaco3349 | `apps/web` — onboarding, activity, badges |
+| Infra / SDK | @Isaaco3349 | `@qms-passport/sdk`, `@qms-passport/chain-config`, Vercel monorepo build |
+
+_Add if you use them on the form: X / Discord / prior shipped repos (2–3 links strengthen “team experience” without needing a large team.)_
 
 ---
 
@@ -87,25 +101,26 @@ Early L1s fragment onboarding across Chainlist, faucet, DEX, and explorer; QMS�
 
 **Milestones:**
 
-| Date | Milestone |
-|------|-----------|
-| Nov 7 | Public alpha URL + onboarding + activity |
-| Nov 18 | Application deadline; SDK docs complete |
-| Nov 30 | Migration Kit CLI + redeploy script demo |
-| Dec (reset) | Manifest import on new testnet; cohort postmortem blog |
+| Date | Milestone | Status |
+|------|-----------|--------|
+| Oct 2026 | Public repo + SDK + docs | Done |
+| Oct 2026 | Live alpha at qms-passport.vercel.app | Done |
+| Nov 18, 2026 | Cohort I application submitted | Planned |
+| Nov 30, 2026 | Migration Kit CLI + redeploy script demo | Planned |
+| Dec 2026 (reset) | Manifest import on new testnet | Planned |
 
-**Business model:** Open source + public good; optional hosted Passport Pro later (team analytics) — **not required for testnet**.
+**Business model:** Open source + public good; no testnet monetization required.
 
 ---
 
 ## Real progress / traction
 
-`[Fill as you ship:]`
+- **Repo:** https://github.com/Isaaco3349/QMS-Passport (public)  
+- **Demo:** https://qms-passport.vercel.app (production deploy on Vercel)  
+- **Scope:** 4 workspace packages (web, SDK, chain-config, contracts) + builder documentation  
+- **On-chain (optional next):** `DeploymentRegistry` deploy + QMSScan verify  
 
-- GitHub stars / forks  
-- Weekly active wallets  
-- Manifest exports  
-- Other teams importing `@qms-passport/sdk`  
+_Update before submit if available: GitHub stars, wallet connects on demo, manifest downloads, Discord / X post linking demo._
 
 ---
 
@@ -129,10 +144,13 @@ We optimize for **ecosystem multiplier**, not a closed demo:
 
 ---
 
-## Links
+## Links (paste into form)
 
-- Docs index: [README.md](../README.md)  
-- Architecture: [docs/ARCHITECTURE.md](../docs/ARCHITECTURE.md)  
-- QMS Testnet RPC: https://rpc.testnet.qms.finance  
-- QMSScan: https://testnet.qmsscan.io  
-- QWAP: https://testnet.qwap.xyz  
+| | URL |
+|--|-----|
+| GitHub | https://github.com/Isaaco3349/QMS-Passport |
+| Live demo | https://qms-passport.vercel.app |
+| Docs | https://github.com/Isaaco3349/QMS-Passport#readme |
+| QMS Testnet RPC | https://rpc.testnet.qms.finance |
+| QMSScan | https://testnet.qmsscan.io |
+| QWAP | https://testnet.qwap.xyz |
