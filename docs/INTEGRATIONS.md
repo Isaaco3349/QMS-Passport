@@ -2,6 +2,8 @@
 
 All integrations use **public** QMS and ecosystem endpoints. This document is the implementation checklist for `@qms-passport/sdk` and `apps/web`.
 
+**Source code:** https://github.com/Isaaco3349/QMS-Passport
+
 ## Network
 
 | Field | Value | Source |

@@ -14,7 +14,7 @@ Open-source **front door** to QMS Testnet: guided onboarding into QWAP, **PoUW-a
 
 ## Repository
 
-`https://github.com/[TEAM]/qms-passport` (public from day 0)
+https://github.com/Isaaco3349/QMS-Passport (public from day 0)
 
 ---
 

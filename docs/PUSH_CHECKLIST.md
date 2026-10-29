@@ -36,12 +36,12 @@ git commit -m "Initial QMS Passport: SDK, web alpha, Migration Kit docs"
 Create an empty repo on GitHub (public), then:
 
 ```powershell
-git remote add origin https://github.com/YOUR_ORG/qms-passport.git
+git remote add origin https://github.com/Isaaco3349/QMS-Passport.git
 git branch -M main
 git push -u origin main
 ```
 
-Replace `YOUR_ORG`, update `builders/APPLICATION_DRAFT.md` repo URL, and paste the GitHub link into the Builder Program form.
+Paste **https://github.com/Isaaco3349/QMS-Passport** into the Builder Program form (repo link is also in `builders/APPLICATION_DRAFT.md`).
 
 ---
 

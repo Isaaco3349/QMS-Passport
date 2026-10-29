@@ -8,6 +8,8 @@
 [![EVM](https://img.shields.io/badge/EVM-Reth%20%2F%20Prague--Osaka-blue)](https://docs.qms.finance/for-developers/evm-compatibility)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+**Repository:** https://github.com/Isaaco3349/QMS-Passport
+
 ---
 
 ## Why this exists (and why it is not “another dashboard”)
